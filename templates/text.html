@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST" style="color:white;">
+   {% csrf_token %}
+{{text}}
+   &nbsp; &nbsp; &nbsp;
+   <center>
+<a class="btn btn-warning" href="{% url 'application:texttranslate' %}">GoToTranslate</a>
+   </center>
+</form>
+{% endblock %}

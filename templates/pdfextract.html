@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST" style="color:white;" enctype="multipart/form-data">
+   {% csrf_token %}
+
+   <center>
+<input type="submit"  class="btn btn-warning">
+   </center>
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div class="mb-3" style="width:75%;padding:50px;position:relative;">
+    <label class="form-label" style="color:white">TEXT</label>
+    <input type="text" class="form-control" name="t" placeholder="Upload Text">
+  </div>
+
+  <input type="submit" class="btn btn-warning" style="position:absolute;left:100px;top:130px;">
+</form>
+{% endblock %}

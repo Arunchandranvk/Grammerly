@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div class="mb-3" style="width:75%;padding:50px;position:relative;">
+    <label class="form-label" style="color:white">PDF</label>
+    <input type="file" class="form-control" name="p" placeholder="Upload PDF">
+  </div>
+
+  <input type="submit" class="btn btn-warning" style="position:absolute;left:100px;top:130px;">
+</form>
+{% endblock %}

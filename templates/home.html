@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style1.css' %}">
+<div class="container body1">
+    <div class="row">
+        <div class="col-sm-3 x1" style="">
+            <a href="{% url 'application:imageupload' %}"><i class="fa-solid fa-image fa-7x" style="color: #ffffff;"></i></a>
+            <p class="p1">Image</p>
+        </div>
+        <div class="col-sm-3 x2" style="">
+            <a href="{% url 'application:textupload' %}"><i class="fa-solid fa-file-lines fa-7x" style="color: #ffffff;"></i></a>
+            <p class="p1">Text</p>
+        </div>
+        <div class="col-sm-3 x3" style="">
+            <a href="{% url 'application:pdfupload' %}"><i class="fa-solid fa-file-pdf fa-7x" style="color: #ffffff;"></i></a>
+            <p class="p1">PDF</p>
+        </div>
+        <div class="col-sm-3 x4" style="">
+            <a><i class="fa-solid fa-camera fa-7x" style="color: #ffffff;"></i></a>
+            <p class="p1">CamScan</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

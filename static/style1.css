@@ -1,0 +1,8 @@
+.body1{position:relative;background:blue;}
+.x1{position:absolute;top:100px;}
+.x2{position:absolute;top:100px;left:300px}
+.x3{position:absolute;top:100px;left:600px}
+.x4{position:absolute;top:100px;left:900px}
+.p1{color:white;font-size:30px;}
+
+
